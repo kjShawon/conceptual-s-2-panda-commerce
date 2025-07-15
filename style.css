@@ -29,7 +29,30 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
-
+}
+.product-li{
+    position: relative;
+}
+.dropdown-nav-items{
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    padding: 5px 10px;
+    list-style: none;
+    background-color: white;
+    width: 150px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 7px -1px 20px 3px rgba(0, 0, 0, 0.36);
+    visibility: hidden;
+    
+}
+.dropdown-nav-items li{
+    margin: 5px 0;
+}
+.product-li:hover .dropdown-nav-items{
+    visibility: visible;
+    top: 100%;
+    transition: 0.5s;
 }
 
 .search-parent{
